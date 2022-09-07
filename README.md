@@ -10,13 +10,21 @@ Generate API and user authentication
 ## Requirement
 
 **Create .env file in your root directory**
-PORT = <your port>
+
+PORT = **your port**
+
 DB_HOST = **db host**
+
 DB_PORT = **db port**
+
 DB_USER = **db username**
+
 DB_PASSWORD = **db password**
+
 DB_NAME = **db name**
+
 TOKEN_SECRET = **token secret key**
+
 UPLOAD_DIR = **upload file director**
 
 ## Installation
