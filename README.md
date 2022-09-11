@@ -11,21 +11,23 @@ Generate API and user authentication
 
 **Create .env file in your root directory**
 
-PORT = **your port**
+MONGODB_USER = **db username**
 
-DB_HOST = **db host**
+MONGODB_PASSWORD = **db password**
 
-DB_PORT = **db port**
+MONGODB_DATABASE = **db name**
 
-DB_USER = **db username**
+MONGODB_LOCAL_PORT = **db local port**
 
-DB_PASSWORD = **db password**
+MONGODB_DOCKER_PORT = **db docker port**
 
-DB_NAME = **db name**
+NODE_LOCAL_PORT = **your local port**
 
-TOKEN_SECRET = **token secret key**
+NODE_DOCKER_PORT = **your docker port**
 
-UPLOAD_DIR = **upload file director**
+NODE_TOKEN_SECRET = **token secret key**
+
+NODE_UPLOAD_DIR = **upload file director**
 
 ## Installation
 
