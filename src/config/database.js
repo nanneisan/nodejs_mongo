@@ -2,14 +2,10 @@ require("dotenv").config();
 
 const env = process.env;
 
-let host = env.DB_HOST;
-let port = env.DB_PORT;
-let username = env.DB_USER;
-let password = env.DB_PASSWORD;
-let database = env.DB_NAME;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME } = process.env;
 
 // "mongodb://username:password@host:port/database";
-let connection = `mongodb://${host}:${port}/${database}`;
+let connection = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`;
 
 module.exports = {
   db: connection,

@@ -23,6 +23,10 @@ mongoose
   .then(() => console.log("MongoDB connected!"))
   .catch((err) => console.log(err));
 
+app.get("/", function (req, res) {
+  res.json({ hello: "world" });
+});
+
 app.use("/users", userRouter);
 app.use("/posts", postRouter);
 
@@ -36,7 +40,7 @@ function normalizePort(val) {
   return false;
 }
 
-const port = normalizePort(process.env.PORT || 5000);
+const port = normalizePort(process.env.PORT || 8080);
 const server = http.Server(app);
 
 server.listen(port, () => {
