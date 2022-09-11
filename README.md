@@ -58,3 +58,7 @@ $ npm run start
 # unit tests
 $ npm run test
 ```
+
+## REST API Documentation
+
+*https://drive.google.com/file/d/1nbLBsIDDCYvn-MwcWkQTTzsoH_bfxP_R/view?usp=sharing*
